@@ -101,20 +101,84 @@ nav a:hover{
 
 .hero{
 
+    position:relative;
+
+    min-height:100vh;
+
     padding-top:150px;
     padding-bottom:120px;
 
-}
-
-.hero-content{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
+    display:flex;
 
     align-items:center;
 
-    gap:60px;
+    overflow:hidden;
+
+}
+
+/* FOTO COMO FUNDO */
+
+.hero-image{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    z-index:0;
+
+}
+
+.hero-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    border-radius:0;
+
+    box-shadow:none;
+
+}
+
+/* CAMADA CLARA SOBRE A FOTO */
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(255,255,255,.58);
+
+    z-index:1;
+
+}
+
+/* CONTEÚDO */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+}
+
+/* TEXTO */
+
+.hero-text{
+
+    max-width:650px;
 
 }
 
@@ -156,13 +220,54 @@ nav a:hover{
 
 }
 
-.hero-image img{
 
-    width:100%;
+/* ================= HERO NO CELULAR ================= */
 
-    border-radius:30px;
+@media (max-width:768px){
 
-    box-shadow:0 20px 40px rgba(0,0,0,.12);
+    .hero{
+
+        min-height:100vh;
+
+        padding-top:130px;
+
+        padding-bottom:70px;
+
+    }
+
+    .hero-image img{
+
+        object-position:center top;
+
+    }
+
+    .hero::after{
+
+        background:rgba(255,255,255,.62);
+
+    }
+
+    .hero-text{
+
+        max-width:100%;
+
+        text-align:center;
+
+    }
+
+    .hero h1{
+
+        font-size:40px;
+
+    }
+
+    .hero p{
+
+        font-size:17px;
+
+    }
+
+}
 
 }
 
