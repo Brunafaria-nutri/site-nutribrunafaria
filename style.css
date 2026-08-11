@@ -88,11 +88,12 @@ nav a:hover {
     border-radius: 0;
     box-shadow: none;
 }
+/* CAMADA LEVE SOBRE A FOTO */
 .hero::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255,255,255,.12);
+    background: rgba(255,255,255,.03);
     z-index: 1;
     pointer-events: none;
 }
@@ -107,29 +108,40 @@ nav a:hover {
     max-width: 650px;
     padding-bottom: 20px;
 }
+/* ==========================================
+   TEXTO DO HERO
+========================================== */
 .subtitulo {
     display: block;
-    color: #7d3f4b !important;
+    color: #6f3542 !important;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 700 !important;
     white-space: pre-line;
     text-shadow: none !important;
+    filter: none !important;
+    opacity: 1 !important;
 }
 .hero h1 {
     font-family: 'Playfair Display', serif;
     font-size: 55px;
     margin: 20px 0;
-    color: #1f1f1f !important;
+    color: #151515 !important;
     line-height: 1.2;
+    font-weight: 700 !important;
     text-shadow: none !important;
+    filter: none !important;
+    opacity: 1 !important;
 }
 .hero p {
     font-size: 18px;
-    color: #303030 !important;
+    color: #222222 !important;
     margin-bottom: 35px;
+    line-height: 1.5;
     text-shadow: none !important;
+    filter: none !important;
+    opacity: 1 !important;
 }
 /* ==========================================
    BOTÕES
@@ -567,24 +579,30 @@ img {
     .subtitulo {
         font-size: 10px;
         letter-spacing: 1.5px;
-        color: #7d3f4b !important;
+        color: #6f3542 !important;
         margin-bottom: 6px;
         text-shadow: none !important;
+        filter: none !important;
+        opacity: 1 !important;
     }
     .hero h1 {
         font-size: 34px;
         line-height: 1.1;
         margin: 8px 0;
-        color: #1f1f1f !important;
+        color: #151515 !important;
         text-shadow: none !important;
+        filter: none !important;
+        opacity: 1 !important;
     }
     .hero p {
         font-size: 15px;
         line-height: 1.4;
         max-width: 320px;
         margin-bottom: 0;
-        color: #303030 !important;
+        color: #222222 !important;
         text-shadow: none !important;
+        filter: none !important;
+        opacity: 1 !important;
     }
     .hero-text .botoes {
         position: absolute;
@@ -741,4 +759,26 @@ img {
     .logo img {
         width: 140px;
     }
+}
+/* ==========================================
+   CORREÇÃO FINAL - TEXTO DO HERO
+========================================== */
+.hero .subtitulo,
+.hero h1,
+.hero p {
+    text-shadow: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+}
+.hero .subtitulo {
+    color: #6f3542 !important;
+    font-weight: 700 !important;
+}
+.hero h1 {
+    color: #151515 !important;
+    font-weight: 700 !important;
+}
+.hero p {
+    color: #222222 !important;
+    font-weight: 400 !important;
 }
