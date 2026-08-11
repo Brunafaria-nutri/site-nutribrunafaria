@@ -1,438 +1,523 @@
 /* ==========================================
-   BRUNA FARIA
-   NUTRICIONISTA CLÍNICA, ESPORTIVA E ESTÉTICA
+BRUNA FARIA
+NUTRICIONISTA CLÍNICA, ESPORTIVA E ESTÉTICA
 ========================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    }
+
 html {
-    scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
+
 body {
-    font-family: 'Playfair Display', sans-serif;
-    background: #faf7f4;
-    color: #9c5d67;
-    line-height: 1.5;
+font-family: ‘Playfair Display’, sans-serif;
+background: #faf7f4;
+color: #9c5d67;
+line-height: 1.5;
 }
+
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+width: 90%;
+max-width: 1200px;
+margin: auto;
 }
+
 /* ==========================================
-   HEADER
+HEADER
 ========================================== */
+
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: white;
-    box-shadow: 0 2px 20px rgba(0,0,0,.05);
-    z-index: 999;
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+background: white;
+box-shadow: 0 2px 20px rgba(0,0,0,.05);
+z-index: 999;
 }
+
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
 }
+
 .logo img {
-    width: 150px;
-    height: auto;
-    display: block;
+width: 150px;
+height: auto;
+display: block;
 }
+
 nav ul {
-    display: flex;
-    gap: 24px;
-    list-style: none;
-    align-items: center;
+display: flex;
+gap: 24px;
+list-style: none;
+align-items: center;
 }
+
 nav a {
-    text-decoration: none;
-    color: #555;
-    font-size: 14px;
-    font-weight: 500;
-    white-space: nowrap;
-    transition: .3s;
+text-decoration: none;
+color: #555;
+font-size: 14px;
+font-weight: 500;
+white-space: nowrap;
+transition: .3s;
 }
+
 nav a:hover {
-    color: #b88b7d;
+color: #b88b7d;
 }
+
 /* ==========================================
-   HERO - DESKTOP
+HERO - DESKTOP
 ========================================== */
+
 .hero {
-    position: relative;
-    min-height: 100vh;
-    padding-top: 130px;
-    padding-bottom: 70px;
-    display: flex;
-    align-items: flex-end;
-    overflow: hidden;
+position: relative;
+min-height: 100vh;
+padding-top: 130px;
+padding-bottom: 70px;
+display: flex;
+align-items: flex-end;
+overflow: hidden;
 }
+
 .hero-image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+z-index: 0;
 }
+
 .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-    border-radius: 0;
-    box-shadow: none;
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center center;
+border-radius: 0;
+box-shadow: none;
 }
-/* CAMADA ESBRANQUIÇADA LEVE SOBRE A FOTO */
+
+/* CAMADA LEVE SOBRE A FOTO */
+
 .hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,.05);
-    z-index: 1;
-    pointer-events: none;
+content: “”;
+position: absolute;
+inset: 0;
+background: rgba(255,255,255,.03);
+z-index: 1;
+pointer-events: none;
 }
+
 .hero-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
+position: relative;
+z-index: 2;
+width: 100%;
 }
+
 .hero-text {
-    position: relative;
-    z-index: 10;
-    max-width: 650px;
-    padding-bottom: 20px;
+position: relative;
+z-index: 10;
+max-width: 650px;
+padding-bottom: 20px;
 }
+
 /* ==========================================
-   TEXTO DO HERO
-   MAIS FORTE E NÍTIDO
+TEXTO DO HERO
+AJUSTE SOMENTE DE COR/LEITURA
 ========================================== */
+
 .subtitulo {
-    display: block;
-    color: #713643 !important;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 14px;
-    font-weight: 700 !important;
-    white-space: pre-line;
-    /* Sem sombra */
-    text-shadow: none !important;
-    filter: none !important;
-    opacity: 1 !important;
+display: block;
+color: #542630 !important;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 14px;
+font-weight: 800 !important;
+white-space: pre-line;
+text-shadow:
+0 1px 2px rgba(255,255,255,.45),
+0 0 1px rgba(0,0,0,.25) !important;
+filter: none !important;
+opacity: 1 !important;
 }
+
 .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 55px;
-    margin: 20px 0;
-    color: #171717 !important;
-    line-height: 1.2;
-    font-weight: 700 !important;
-    /* Sem sombra */
-    text-shadow: none !important;
-    filter: none !important;
-    opacity: 1 !important;
+font-family: ‘Playfair Display’, serif;
+font-size: 55px;
+margin: 20px 0;
+color: #0f0f0f !important;
+line-height: 1.2;
+font-weight: 700 !important;
+text-shadow:
+0 1px 2px rgba(255,255,255,.45),
+0 0 1px rgba(0,0,0,.25) !important;
+filter: none !important;
+opacity: 1 !important;
 }
+
 .hero p {
-    font-size: 18px;
-    color: #242424 !important;
-    margin-bottom: 35px;
-    line-height: 1.5;
-    font-weight: 500 !important;
-    /* Sem sombra */
-    text-shadow: none !important;
-    filter: none !important;
-    opacity: 1 !important;
+font-size: 18px;
+color: #171717 !important;
+margin-bottom: 35px;
+line-height: 1.5;
+font-weight: 500 !important;
+text-shadow:
+0 1px 2px rgba(255,255,255,.45),
+0 0 1px rgba(0,0,0,.2) !important;
+filter: none !important;
+opacity: 1 !important;
 }
+
 /* ==========================================
-   BOTÕES
+BOTÕES
 ========================================== */
+
 .btn {
-    display: inline-block;
-    background: #b88b7d;
-    color: white;
-    padding: 16px 34px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: .3s;
-    margin-right: 15px;
-    box-shadow: 0 10px 20px rgba(184,139,125,.25);
+display: inline-block;
+background: #b88b7d;
+color: white;
+padding: 16px 34px;
+border-radius: 50px;
+text-decoration: none;
+transition: .3s;
+margin-right: 15px;
+box-shadow: 0 10px 20px rgba(184,139,125,.25);
 }
+
 .btn:hover {
-    background: #9d7b6d;
-    transform: translateY(-3px);
+background: #9d7b6d;
+transform: translateY(-3px);
 }
+
 .btn-outline {
-    display: inline-block;
-    border: 2px solid #b88b7d;
-    color: #b88b7d;
-    padding: 16px 34px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: .3s;
+display: inline-block;
+border: 2px solid #b88b7d;
+color: #b88b7d;
+padding: 16px 34px;
+border-radius: 50px;
+text-decoration: none;
+transition: .3s;
 }
+
 .btn-outline:hover {
-    background: #b88b7d;
-    color: white;
-    transform: translateY(-3px);
+background: #b88b7d;
+color: white;
+transform: translateY(-3px);
 }
+
 /* ==========================================
-   SEÇÕES
+SEÇÕES
 ========================================== */
+
 section {
-    padding: 100px 0;
+padding: 100px 0;
 }
+
 section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 42px;
-    text-align: center;
-    color: #2f2f2f;
-    margin-bottom: 20px;
+font-family: ‘Playfair Display’, serif;
+font-size: 42px;
+text-align: center;
+color: #2f2f2f;
+margin-bottom: 20px;
 }
+
 section p {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 20px;
-    color: #666;
+text-align: center;
+max-width: 800px;
+margin: 0 auto 20px;
+color: #666;
 }
+
 /* ==========================================
-   FOTOS 01 E 02
+FOTOS 01 E 02
 ========================================== */
+
 .imagem-destaque {
-    width: 100%;
-    height: 100vh;
-    min-height: 650px;
-    max-height: 850px;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    position: relative;
+width: 100%;
+height: 100vh;
+min-height: 650px;
+max-height: 850px;
+padding: 0;
+margin: 0;
+overflow: hidden;
+position: relative;
 }
+
 .imagem-destaque img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center center;
 }
+
 /* ==========================================
-   CARDS
+CARDS
 ========================================== */
+
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px;
+margin-top: 50px;
 }
+
 .card {
-    background: #fff;
-    padding: 35px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,.06);
-    transition: .35s;
-    overflow: hidden;
+background: #fff;
+padding: 35px;
+border-radius: 20px;
+text-align: center;
+box-shadow: 0 10px 30px rgba(0,0,0,.06);
+transition: .35s;
+overflow: hidden;
 }
+
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 18px 35px rgba(0,0,0,.10);
+transform: translateY(-8px);
+box-shadow: 0 18px 35px rgba(0,0,0,.10);
 }
+
 .card i {
-    font-size: 40px;
-    color: #b88b7d;
-    margin-bottom: 20px;
+font-size: 40px;
+color: #b88b7d;
+margin-bottom: 20px;
 }
+
 .card h3 {
-    margin-bottom: 15px;
-    color: #2f2f2f;
+margin-bottom: 15px;
+color: #2f2f2f;
 }
+
 .card p {
-    font-size: 15px;
+font-size: 15px;
 }
+
 .card::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 4px;
-    background: #b88b7d;
-    margin: 25px auto 0;
-    transition: .4s;
+content: “”;
+display: block;
+width: 0;
+height: 4px;
+background: #b88b7d;
+margin: 25px auto 0;
+transition: .4s;
 }
+
 .card:hover::after {
-    width: 80px;
+width: 80px;
 }
+
 /* ==========================================
-   MÉTODO BF
+MÉTODO BF
 ========================================== */
+
 .metodo {
-    background: #f5efea;
+background: #f5efea;
 }
+
 /* ==========================================
-   SERVIÇOS
+SERVIÇOS
 ========================================== */
+
 .servicos {
-    background: #fff;
+background: #fff;
 }
+
 /* ==========================================
-   PÚBLICO
+PÚBLICO
 ========================================== */
+
 .publico {
-    background: #faf7f4;
+background: #faf7f4;
 }
+
 .publico .card {
-    font-size: 40px;
-    font-weight: 600;
+font-size: 40px;
+font-weight: 600;
 }
+
 /* ==========================================
-   ACOMPANHAMENTOS
+ACOMPANHAMENTOS
 ========================================== */
+
 .acompanhamentos {
-    background: white;
+background: white;
 }
+
 .acompanhamentos .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
+
 .acompanhamentos .btn {
-    margin-top: 25px;
+margin-top: 25px;
 }
+
 /* ==========================================
-   MATERIAIS
+MATERIAIS
 ========================================== */
+
 .materiais {
-    background: #f5efea;
+background: #f5efea;
 }
+
 /* ==========================================
-   ÁREA DO PACIENTE
+ÁREA DO PACIENTE
 ========================================== */
+
 .paciente {
-    background: white;
+background: white;
 }
+
 /* ==========================================
-   FAQ
+FAQ
 ========================================== */
+
 .faq {
-    background: #faf7f4;
+background: #faf7f4;
 }
+
 .pergunta {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    margin: 20px auto;
-    max-width: 900px;
-    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+background: white;
+padding: 25px;
+border-radius: 15px;
+margin: 20px auto;
+max-width: 900px;
+box-shadow: 0 5px 20px rgba(0,0,0,.05);
 }
+
 .pergunta h3 {
-    margin-bottom: 10px;
-    color: #b88b7d;
+margin-bottom: 10px;
+color: #b88b7d;
 }
+
 /* ==========================================
-   CONTATO + FOTO 03
+CONTATO + FOTO 03
 ========================================== */
+
 .contato {
-    position: relative;
-    min-height: 650px;
-    padding: 0;
-    display: flex;
-    align-items: flex-end;
-    overflow: hidden;
+position: relative;
+min-height: 650px;
+padding: 0;
+display: flex;
+align-items: flex-end;
+overflow: hidden;
 }
+
 .contato-image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+z-index: 0;
 }
+
 .contato-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center center;
 }
+
 .contato-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(255,255,255,.10) 25%,
-        rgba(255,255,255,.30) 50%,
-        rgba(255,255,255,.78) 75%,
-        rgba(255,255,255,.92) 100%
-    );
-    z-index: 1;
+position: absolute;
+inset: 0;
+background: linear-gradient(
+to bottom,
+rgba(255,255,255,.10) 25%,
+rgba(255,255,255,.30) 50%,
+rgba(255,255,255,.78) 75%,
+rgba(255,255,255,.92) 100%
+);
+z-index: 1;
 }
+
 .contato-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    text-align: center;
-    padding-top: 220px;
-    padding-bottom: 70px;
+position: relative;
+z-index: 2;
+width: 100%;
+text-align: center;
+padding-top: 220px;
+padding-bottom: 70px;
 }
+
 .contato-content h2 {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 18px;
-    color: #2d2d2d;
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    line-height: 1.2;
+text-align: center;
+max-width: 700px;
+margin: 0 auto 18px;
+color: #2d2d2d;
+font-family: ‘Playfair Display’, serif;
+font-size: 48px;
+line-height: 1.2;
 }
+
 .contato-content p {
-    text-align: center;
-    max-width: 650px;
-    margin: 0 auto 30px;
-    color: #555;
-    font-size: 18px;
-    line-height: 1.6;
+text-align: center;
+max-width: 650px;
+margin: 0 auto 30px;
+color: #555;
+font-size: 18px;
+line-height: 1.6;
 }
+
 .contato-content .btn {
-    display: inline-block;
-    margin: 0;
+display: inline-block;
+margin: 0;
 }
+
 /* ==========================================
-   RODAPÉ
+RODAPÉ
 ========================================== */
+
 footer {
-    background: #2d2d2d;
-    color: white;
-    padding: 60px 0;
-    text-align: center;
+background: #2d2d2d;
+color: white;
+padding: 60px 0;
+text-align: center;
 }
+
 footer h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 34px;
-    margin-bottom: 10px;
+font-family: ‘Playfair Display’, serif;
+font-size: 34px;
+margin-bottom: 10px;
 }
+
 footer p {
-    color: #d7d7d7;
+color: #d7d7d7;
 }
+
 .redes {
-    margin: 30px 0;
+margin: 30px 0;
 }
+
 .redes a {
-    color: white;
-    font-size: 24px;
-    margin: 0 12px;
-    transition: .3s;
+color: white;
+font-size: 24px;
+margin: 0 12px;
+transition: .3s;
 }
+
 .redes a:hover {
-    color: #d9b7a8;
+color: #d9b7a8;
 }
+
 .copy {
-    margin-top: 30px;
-    font-size: 14px;
-    color: #aaa;
+margin-top: 30px;
+font-size: 14px;
+color: #aaa;
 }
+
 /* ==========================================
-   ANIMAÇÃO
+ANIMAÇÃO
 ========================================== */
+
 .hero,
 .sobre,
 .metodo,
@@ -443,329 +528,406 @@ footer p {
 .paciente,
 .faq,
 .contato {
-    animation: fadeUp .8s ease;
+animation: fadeUp .8s ease;
 }
+
 @keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+
+from {
+    opacity: 0;
+    transform: translateY(30px);
 }
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+}
+
 /* ==========================================
-   IMAGENS
+IMAGENS
 ========================================== */
+
 img {
-    transition: .4s;
+transition: .4s;
 }
+
 /* ==========================================
-   BARRA DE ROLAGEM
+BARRA DE ROLAGEM
 ========================================== */
+
 ::-webkit-scrollbar {
-    width: 10px;
+width: 10px;
 }
+
 ::-webkit-scrollbar-track {
-    background: #f3efeb;
+background: #f3efeb;
 }
+
 ::-webkit-scrollbar-thumb {
-    background: #b88b7d;
-    border-radius: 20px;
+background: #b88b7d;
+border-radius: 20px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-    background: #9d7b6d;
+background: #9d7b6d;
 }
+
 /* ==========================================
-   SELEÇÃO
+SELEÇÃO
 ========================================== */
+
 ::selection {
+background: #d9b7a8;
+color: white;
+}
+
+/* ==========================================
+TABLET
+========================================== */
+
+@media (max-width: 1024px) {
+
+.hero {
+    min-height: 100vh;
+}
+.hero-text {
+    max-width: 580px;
+}
+.hero h1 {
+    font-size: 48px;
+}
+nav ul {
+    gap: 18px;
+}
+nav a {
+    font-size: 13px;
+}
+.contato-content h2 {
+    font-size: 44px;
+}
+.imagem-destaque {
+    height: 100vh;
+    min-height: 600px;
+}
+
+}
+
+/* ==========================================
+CELULAR
+========================================== */
+
+@media (max-width: 768px) {
+
+header .container {
+    flex-direction: column;
+    gap: 15px;
+}
+nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+nav a {
+    font-size: 13px;
+}
+/* HERO */
+.hero {
+    min-height: auto;
+    padding-top: 170px;
+    padding-bottom: 0;
+    display: block;
+    overflow: visible;
+}
+.hero-image {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: 65vh;
+    min-height: 480px;
+    z-index: 1;
+}
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 0;
+}
+.hero::after {
+    display: block;
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0) 35%,
+        rgba(255,255,255,.05) 55%,
+        rgba(255,255,255,.45) 100%
+    );
+    z-index: 2;
+}
+.hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+}
+.hero-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: none;
+    padding: 0 25px 28px;
+    text-align: left;
+    z-index: 10;
+}
+.subtitulo {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #542630 !important;
+    margin-bottom: 6px;
+    font-weight: 800 !important;
+    text-shadow:
+        0 1px 2px rgba(255,255,255,.45),
+        0 0 1px rgba(0,0,0,.25) !important;
+    filter: none !important;
+    opacity: 1 !important;
+}
+.hero h1 {
+    font-size: 34px;
+    line-height: 1.1;
+    margin: 8px 0;
+    color: #0f0f0f !important;
+    font-weight: 700 !important;
+    text-shadow:
+        0 1px 2px rgba(255,255,255,.45),
+        0 0 1px rgba(0,0,0,.25) !important;
+    filter: none !important;
+    opacity: 1 !important;
+}
+.hero p {
+    font-size: 15px;
+    line-height: 1.4;
+    max-width: 320px;
+    margin-bottom: 0;
+    color: #171717 !important;
+    font-weight: 500 !important;
+    text-shadow:
+        0 1px 2px rgba(255,255,255,.45),
+        0 0 1px rgba(0,0,0,.2) !important;
+    filter: none !important;
+    opacity: 1 !important;
+}
+.hero-text .botoes {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 25px 25px 65px;
+    background: #faf7f4;
+}
+.btn,
+.btn-outline {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 12px 0;
+}
+.hero + section {
+    padding-top: 160px;
+}
+/* FOTOS 01 E 02 */
+.imagem-destaque {
+    width: 100%;
+    height: 65vh;
+    min-height: 480px;
+    max-height: none;
+    padding: 0;
+    overflow: hidden;
+}
+.imagem-destaque img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+/* SEÇÕES */
+section {
+    padding: 70px 0;
+}
+section h2 {
+    font-size: 32px;
+}
+.cards {
+    grid-template-columns: 1fr;
+}
+/* CONTATO + FOTO 03 */
+.contato {
+    min-height: 600px;
+    align-items: flex-end;
+}
+.contato-image {
+    height: 100%;
+}
+.contato-image img {
+    object-position: center center;
+}
+.contato-overlay {
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,.05) 15%,
+        rgba(255,255,255,.20) 40%,
+        rgba(255,255,255,.72) 68%,
+        rgba(255,255,255,.96) 100%
+    );
+}
+.contato-content {
+    padding: 240px 25px 45px;
+    width: 100%;
+    text-align: center;
+}
+.contato-content h2 {
+    font-size: 34px;
+    line-height: 1.15;
+    margin: 0 auto 15px;
+    text-align: center;
+}
+.contato-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+.contato-content .btn {
+    display: inline-block;
+    width: auto;
+    min-width: 220px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+}
+
+/* ==========================================
+CELULAR PEQUENO
+========================================== */
+
+@media (max-width: 480px) {
+
+.container {
+    width: 92%;
+}
+.hero {
+    padding-top: 160px;
+}
+.hero-image {
+    height: 62vh;
+    min-height: 440px;
+}
+.hero-text {
+    padding: 0 22px 25px;
+}
+.hero h1 {
+    font-size: 30px;
+}
+.hero p {
+    font-size: 14px;
+    max-width: 300px;
+}
+.subtitulo {
+    font-size: 9px;
+}
+.hero-text .botoes {
+    padding: 22px 22px 60px;
+}
+.hero + section {
+    padding-top: 155px;
+}
+/* FOTOS */
+.imagem-destaque {
+    height: 62vh;
+    min-height: 440px;
+}
+.imagem-destaque img {
+    object-position: center center;
+}
+/* CONTATO */
+.contato {
+    min-height: 560px;
+}
+.contato-content {
+    padding: 210px 22px 35px;
+}
+.contato-content h2 {
+    font-size: 30px;
+}
+.contato-content p {
+    font-size: 14px;
+}
+.contato-content .btn {
+    min-width: 210px;
+}
+.logo img {
+    width: 140px;
+}
+
+}
+
+/* ==========================================
+AJUSTE FINAL - SOMENTE LEITURA DO HERO
+========================================== */
+
+/* Garante que o texto do HERO fique sempre acima da imagem */
+.hero .hero-text {
+position: relative;
+z-index: 20;
+}
+
+/* Nome + profissão */
+.hero .subtitulo {
+color: #542630 !important;
+font-weight: 800 !important;
+opacity: 1 !important;
+text-shadow:
+0 1px 2px rgba(255,255,255,.55),
+0 0 1px rgba(0,0,0,.25) !important;
+}
+
+/* Sua jornada começa aqui */
+.hero h1 {
+color: #0f0f0f !important;
+font-weight: 700 !important;
+opacity: 1 !important;
+text-shadow:
+0 1px 2px rgba(255,255,255,.55),
+0 0 1px rgba(0,0,0,.25) !important;
+}
+
+/* Nutrição personalizada */
+.hero p {
+color: #171717 !important;
+font-weight: 500 !important;
+opacity: 1 !important;
+text-shadow:
+0 1px 2px rgba(255,255,255,.55),
+0 0 1px rgba(0,0,0,.20) !important;
+}
+
+/* ==========================================
+NÃO ALTERAR:
+
+* POSIÇÃO DOS BOTÕES
+* IMAGENS
+* CONTATO
+* SOBRE
+* MÉTODO BF
+* SERVIÇOS
+* ACOMPANHAMENTOS
+* FAQ
+    ========================================== */
+    ::selection {
     background: #d9b7a8;
     color: white;
-}
-/* ==========================================
-   TABLET
-========================================== */
-@media (max-width: 1024px) {
-    .hero {
-        min-height: 100vh;
     }
-    .hero-text {
-        max-width: 580px;
-    }
-    .hero h1 {
-        font-size: 48px;
-    }
-    nav ul {
-        gap: 18px;
-    }
-    nav a {
-        font-size: 13px;
-    }
-    .contato-content h2 {
-        font-size: 44px;
-    }
-    .imagem-destaque {
-        height: 100vh;
-        min-height: 600px;
-    }
-}
-/* ==========================================
-   CELULAR
-========================================== */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        gap: 15px;
-    }
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 14px;
-    }
-    nav a {
-        font-size: 13px;
-    }
-    /* ==========================================
-       HERO
-    ========================================== */
-    .hero {
-        min-height: auto;
-        padding-top: 170px;
-        padding-bottom: 0;
-        display: block;
-        overflow: visible;
-    }
-    .hero-image {
-        position: relative;
-        inset: auto;
-        width: 100%;
-        height: 65vh;
-        min-height: 480px;
-        z-index: 1;
-    }
-    .hero-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center top;
-        border-radius: 0;
-    }
-    .hero::after {
-        display: block;
-        background: linear-gradient(
-            to bottom,
-            rgba(255,255,255,0) 35%,
-            rgba(255,255,255,.05) 55%,
-            rgba(255,255,255,.45) 100%
-        );
-        z-index: 2;
-    }
-    .hero-content {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-    }
-    .hero-text {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        max-width: none;
-        padding: 0 25px 28px;
-        text-align: left;
-        z-index: 10;
-    }
-    /* TEXTO MAIS FORTE NO CELULAR */
-    .subtitulo {
-        font-size: 10px;
-        letter-spacing: 1.5px;
-        color: #713643 !important;
-        margin-bottom: 6px;
-        font-weight: 700 !important;
-        text-shadow: none !important;
-        filter: none !important;
-        opacity: 1 !important;
-    }
-    .hero h1 {
-        font-size: 34px;
-        line-height: 1.1;
-        margin: 8px 0;
-        color: #171717 !important;
-        font-weight: 700 !important;
-        text-shadow: none !important;
-        filter: none !important;
-        opacity: 1 !important;
-    }
-    .hero p {
-        font-size: 15px;
-        line-height: 1.4;
-        max-width: 320px;
-        margin-bottom: 0;
-        color: #242424 !important;
-        font-weight: 500 !important;
-        text-shadow: none !important;
-        filter: none !important;
-        opacity: 1 !important;
-    }
-    /* BOTÕES CONTINUAM FORA DA FOTO */
-    .hero-text .botoes {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        width: 100%;
-        padding: 25px 25px 65px;
-        background: #faf7f4;
-    }
-    .btn,
-    .btn-outline {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin: 12px 0;
-    }
-    .hero + section {
-        padding-top: 160px;
-    }
-    /* ==========================================
-       FOTOS 01 E 02 - CELULAR
-    ========================================== */
-    .imagem-destaque {
-        width: 100%;
-        height: 65vh;
-        min-height: 480px;
-        max-height: none;
-        padding: 0;
-        overflow: hidden;
-    }
-    .imagem-destaque img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-    }
-    /* ==========================================
-       SEÇÕES
-    ========================================== */
-    section {
-        padding: 70px 0;
-    }
-    section h2 {
-        font-size: 32px;
-    }
-    .cards {
-        grid-template-columns: 1fr;
-    }
-    /* ==========================================
-       CONTATO + FOTO 03 - CELULAR
-    ========================================== */
-    .contato {
-        min-height: 600px;
-        align-items: flex-end;
-    }
-    .contato-image {
-        height: 100%;
-    }
-    .contato-image img {
-        object-position: center center;
-    }
-    .contato-overlay {
-        background: linear-gradient(
-            to bottom,
-            rgba(255,255,255,.05) 15%,
-            rgba(255,255,255,.20) 40%,
-            rgba(255,255,255,.72) 68%,
-            rgba(255,255,255,.96) 100%
-        );
-    }
-    .contato-content {
-        padding: 240px 25px 45px;
-        width: 100%;
-        text-align: center;
-    }
-    .contato-content h2 {
-        font-size: 34px;
-        line-height: 1.15;
-        margin: 0 auto 15px;
-        text-align: center;
-    }
-    .contato-content p {
-        font-size: 15px;
-        line-height: 1.5;
-        margin: 0 auto 25px;
-        text-align: center;
-    }
-    .contato-content .btn {
-        display: inline-block;
-        width: auto;
-        min-width: 220px;
-        text-align: center;
-        margin: 0 auto;
-    }
-}
-/* ==========================================
-   CELULAR PEQUENO
-========================================== */
-@media (max-width: 480px) {
-    .container {
-        width: 92%;
-    }
-    .hero {
-        padding-top: 160px;
-    }
-    .hero-image {
-        height: 62vh;
-        min-height: 440px;
-    }
-    .hero-text {
-        padding: 0 22px 25px;
-    }
-    .hero h1 {
-        font-size: 30px;
-    }
-    .hero p {
-        font-size: 14px;
-        max-width: 300px;
-    }
-    .subtitulo {
-        font-size: 9px;
-    }
-    .hero-text .botoes {
-        padding: 22px 22px 60px;
-    }
-    .hero + section {
-        padding-top: 155px;
-    }
-    /* FOTOS */
-    .imagem-destaque {
-        height: 62vh;
-        min-height: 440px;
-    }
-    .imagem-destaque img {
-        object-position: center center;
-    }
-    /* CONTATO */
-    .contato {
-        min-height: 560px;
-    }
-    .contato-content {
-        padding: 210px 22px 35px;
-    }
-    .contato-content h2 {
-        font-size: 30px;
-    }
-    .contato-content p {
-        font-size: 14px;
-    }
-    .contato-content .btn {
-        min-width: 210px;
-    }
-    .logo img {
-        width: 140px;
-    }
-}
