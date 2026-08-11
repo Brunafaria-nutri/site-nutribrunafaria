@@ -26,7 +26,9 @@ body {
     margin: auto;
 }
 
-/* ================= HEADER ================= */
+/* ==========================================
+   HEADER
+========================================== */
 
 header {
     position: fixed;
@@ -69,7 +71,7 @@ nav a:hover {
 }
 
 /* ==========================================
-   HERO - COMPUTADOR
+   HERO - DESKTOP
 ========================================== */
 
 .hero {
@@ -82,7 +84,7 @@ nav a:hover {
     overflow: hidden;
 }
 
-/* FOTO DE FUNDO */
+/* FOTO */
 
 .hero-image {
     position: absolute;
@@ -467,7 +469,7 @@ img {
 }
 
 /* ==========================================
-   SELEÇÃO DE TEXTO
+   SELEÇÃO
 ========================================== */
 
 ::selection {
@@ -511,7 +513,7 @@ img {
         gap: 18px;
     }
 
-    /* ================= HERO ================= */
+    /* HERO */
 
     .hero {
         min-height: auto;
@@ -521,14 +523,14 @@ img {
         overflow: visible;
     }
 
-    /* ================= FOTO ================= */
+    /* FOTO GRANDE */
 
     .hero-image {
         position: relative;
         inset: auto;
         width: 100%;
-        height: 58vh;
-        min-height: 430px;
+        height: 65vh;
+        min-height: 480px;
         z-index: 1;
     }
 
@@ -540,13 +542,18 @@ img {
         border-radius: 0;
     }
 
-    /* NÃO COLOCA TEXTO POR CIMA DA FOTO */
+    /* TEXTO SOBRE A PARTE INFERIOR DA FOTO */
 
     .hero::after {
-        display: none;
+        display: block;
+        background: linear-gradient(
+            to bottom,
+            rgba(255,255,255,0) 45%,
+            rgba(255,255,255,.15) 60%,
+            rgba(255,255,255,.78) 100%
+        );
+        z-index: 2;
     }
-
-    /* ================= CONTEÚDO ================= */
 
     .hero-content {
         position: relative;
@@ -556,57 +563,59 @@ img {
         padding: 0;
     }
 
-    /* ================= TEXTO ================= */
-
     .hero-text {
-        position: relative;
-        left: auto;
-        right: auto;
-        bottom: auto;
+        position: absolute;
+
+        left: 0;
+        right: 0;
+        bottom: 0;
 
         width: 100%;
         max-width: none;
 
-        padding: 35px 25px 15px;
-
-        background: #faf7f4;
+        padding: 0 25px 28px;
 
         text-align: left;
 
-        z-index: 2;
+        z-index: 5;
     }
 
     .subtitulo {
-        font-size: 11px;
+        font-size: 10px;
         letter-spacing: 1.5px;
-        margin-bottom: 8px;
+        color: #9c5d67;
+        margin-bottom: 6px;
     }
 
     .hero h1 {
         font-size: 34px;
-        line-height: 1.15;
-        margin: 10px 0;
+        line-height: 1.1;
+        margin: 8px 0;
+        color: #2d2d2d;
     }
 
     .hero p {
         font-size: 15px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-        max-width: 330px;
+        line-height: 1.4;
+        max-width: 320px;
+        margin-bottom: 0;
+        color: #555;
     }
 
-    /* ================= BOTÕES ================= */
+    /* BOTÕES SAEM DA FOTO */
 
     .hero-text .botoes {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+        right: 0;
 
         width: 100%;
 
-        padding-top: 5px;
-        padding-bottom: 60px;
+        padding: 25px 25px 65px;
+
+        background: #faf7f4;
     }
 
     .btn,
@@ -617,10 +626,10 @@ img {
         margin: 12px 0;
     }
 
-    /* ================= ESPAÇO ANTES DA PRÓXIMA SEÇÃO ================= */
+    /* ESPAÇO ANTES DA PRÓXIMA SEÇÃO */
 
     .hero + section {
-        padding-top: 100px;
+        padding-top: 160px;
     }
 
     section {
@@ -646,13 +655,17 @@ img {
         width: 92%;
     }
 
+    .hero {
+        padding-top: 160px;
+    }
+
     .hero-image {
-        height: 56vh;
-        min-height: 410px;
+        height: 62vh;
+        min-height: 440px;
     }
 
     .hero-text {
-        padding: 30px 22px 15px;
+        padding: 0 22px 25px;
     }
 
     .hero h1 {
@@ -660,15 +673,20 @@ img {
     }
 
     .hero p {
-        font-size: 15px;
+        font-size: 14px;
+        max-width: 300px;
     }
 
     .subtitulo {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .hero-text .botoes {
-        padding-bottom: 65px;
+        padding: 22px 22px 60px;
+    }
+
+    .hero + section {
+        padding-top: 155px;
     }
 
     .logo img {
