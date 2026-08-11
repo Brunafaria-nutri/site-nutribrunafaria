@@ -110,8 +110,9 @@ nav a:hover {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255,255,255,.30);
+    background: rgba(255,255,255,.12) !important!
     z-index: 1;
+pointer-events: none:
 }
 
 .hero-content {
@@ -122,35 +123,36 @@ nav a:hover {
 
 .hero-text {
     position: relative;
-    z-index: 3;
+    z-index: 10;
     max-width: 650px;
     padding-bottom: 20px;
 }
 
 .subtitulo {
     display: block;
-    color: #b88b7d;
+    color: #8f4f5b !important;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     white-space: pre-line;
+   text-shadow: 01px 3px rgba(255,255,255,.7);
 }
 
 .hero h1 {
     font-family: 'Playfair Display', serif;
     font-size: 55px;
     margin: 20px 0;
-    color: #252525;
+    color: #202020 !important;
     line-height: 1.2;
-   text-shadow: 0 1px 8px rgba(255,255,255,.25);
+   text-shadow: 0 1px 5px rgba(255,255,255,.55);
 }
 
 .hero p {
     font-size: 18px;
-    color: #444;
+    color: #333333;
     margin-bottom: 35px;
-   text-shadow: 0 1px 8px rgba(255,255,255,.25);
+   text-shadow: 0 1px 8px rgba(255,255,255,.6);
 }
 
 
@@ -671,9 +673,9 @@ img {
         display: block;
         background: linear-gradient(
             to bottom,
-            rgba(255,255,255,0) 40%,
-            rgba(255,255,255,.15) 55%,
-            rgba(255,255,255,.78) 100%
+            rgba(255,255,255,0) 35%,
+            rgba(255,255,255,.05) 55%,
+            rgba(255,255,255,.45) 100%
         );
         z-index: 2;
     }
@@ -695,21 +697,23 @@ img {
         max-width: none;
         padding: 0 25px 28px;
         text-align: left;
-        z-index: 5;
+        z-index: 10;
     }
 
     .subtitulo {
         font-size: 10px;
         letter-spacing: 1.5px;
-        color: #9c5d67;
+        color: #8f4f5b !important;
         margin-bottom: 6px;
+       text-shadow: 0 1px 3px rgba(255,255,255,.7)
     }
 
     .hero h1 {
         font-size: 34px;
         line-height: 1.1;
         margin: 8px 0;
-        color: #2d2d2d;
+        color: #202020 !important;
+       text-shadow: 0 2px 5px rgba(255,255,255,.5)
     }
 
     .hero p {
@@ -717,7 +721,8 @@ img {
         line-height: 1.4;
         max-width: 320px;
         margin-bottom: 0;
-        color: #555;
+        color: #333333;
+       text-shadow: 0 1px 4px rgba(255,255,255,.5)
     }
 
     .hero-text .botoes {
