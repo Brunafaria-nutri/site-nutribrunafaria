@@ -295,7 +295,7 @@ section p {
     min-height: 650px;
     padding: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     overflow: hidden;
 }
 .contato-image {
@@ -314,34 +314,42 @@ section p {
 .contato-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(255,255,255,.58);
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,.10) 25%,
+        rgba(255,255,255,.30) 50%,
+        rgba(255,255,255,.78) 75%,
+        rgba(255,255,255,.92) 100%
+    );
     z-index: 1;
 }
 .contato-content {
     position: relative;
     z-index: 2;
-    text-align: left;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    width: 100%;
+    text-align: center;
+    padding-top: 220px;
+    padding-bottom: 70px;
 }
 .contato-content h2 {
-    text-align: left;
-    max-width: 650px;
-    margin: 0 0 20px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 18px;
     color: #2d2d2d;
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     line-height: 1.2;
 }
 .contato-content p {
-    text-align: left;
-    max-width: 600px;
-    margin: 0 0 35px;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 30px;
     color: #555;
     font-size: 18px;
     line-height: 1.6;
 }
 .contato-content .btn {
+    display: inline-block;
     margin: 0;
 }
 /* ==========================================
@@ -462,7 +470,9 @@ img {
         justify-content: center;
         gap: 18px;
     }
-    /* HERO */
+    /* ==========================================
+       HERO
+    ========================================== */
     .hero {
         min-height: auto;
         padding-top: 170px;
@@ -576,30 +586,35 @@ img {
     .contato-overlay {
         background: linear-gradient(
             to bottom,
-            rgba(255,255,255,.05) 20%,
-            rgba(255,255,255,.35) 45%,
-            rgba(255,255,255,.88) 78%,
+            rgba(255,255,255,.05) 15%,
+            rgba(255,255,255,.20) 40%,
+            rgba(255,255,255,.72) 68%,
             rgba(255,255,255,.96) 100%
         );
     }
     .contato-content {
-        padding: 80px 25px 45px;
+        padding: 240px 25px 45px;
         width: 100%;
+        text-align: center;
     }
     .contato-content h2 {
         font-size: 34px;
         line-height: 1.15;
-        margin-bottom: 15px;
+        margin: 0 auto 15px;
+        text-align: center;
     }
     .contato-content p {
         font-size: 15px;
         line-height: 1.5;
-        margin-bottom: 25px;
+        margin: 0 auto 25px;
+        text-align: center;
     }
     .contato-content .btn {
-        width: 100%;
+        display: inline-block;
+        width: auto;
+        min-width: 220px;
         text-align: center;
-        margin: 0;
+        margin: 0 auto;
     }
 }
 /* ==========================================
@@ -635,18 +650,23 @@ img {
     .hero + section {
         padding-top: 155px;
     }
-    /* CONTATO */
+    /* ==========================================
+       CONTATO
+    ========================================== */
     .contato {
         min-height: 560px;
     }
     .contato-content {
-        padding: 70px 22px 35px;
+        padding: 210px 22px 35px;
     }
     .contato-content h2 {
         font-size: 30px;
     }
     .contato-content p {
         font-size: 14px;
+    }
+    .contato-content .btn {
+        min-width: 210px;
     }
     .logo img {
         width: 140px;
