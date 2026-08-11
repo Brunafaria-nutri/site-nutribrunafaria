@@ -74,13 +74,13 @@ nav a:hover {
     position: relative;
     min-height: 100vh;
     padding-top: 150px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
 }
 
-/* FOTO DE FUNDO */
+/* FOTO */
 
 .hero-image {
     position: absolute;
@@ -207,42 +207,6 @@ section p {
 }
 
 /* ==========================================
-   SOBRE
-========================================== */
-
-.sobre {
-    background: #faf7f4;
-}
-
-.sobre-conteudo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 70px;
-}
-
-.sobre-texto {
-    text-align: left;
-}
-
-.sobre-texto h2 {
-    text-align: left;
-}
-
-.sobre-texto p {
-    text-align: left;
-    margin-left: 0;
-}
-
-.sobre-imagem img {
-    width: 100%;
-    max-height: 550px;
-    object-fit: cover;
-    border-radius: 30px;
-    box-shadow: 0 20px 40px rgba(0,0,0,.12);
-}
-
-/* ==========================================
    CARDS
 ========================================== */
 
@@ -345,48 +309,6 @@ section p {
 }
 
 /* ==========================================
-   FAIXA DA MARCA / LOGO
-========================================== */
-
-.marca-destaque {
-    min-height: 420px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    background:
-        linear-gradient(
-            rgba(245,239,234,.94),
-            rgba(245,239,234,.94)
-        ),
-        url("imagens/logo.png");
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 320px;
-}
-
-.marca-overlay {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.marca-overlay img {
-    width: 180px;
-    max-width: 60%;
-    margin-bottom: 25px;
-}
-
-.marca-overlay p {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    color: #8f7065;
-    line-height: 1.5;
-}
-
-/* ==========================================
    MATERIAIS
 ========================================== */
 
@@ -400,43 +322,6 @@ section p {
 
 .paciente {
     background: white;
-}
-
-/* ==========================================
-   ENCERRAMENTO
-========================================== */
-
-.encerramento {
-    background: #fff;
-}
-
-.encerramento-conteudo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 70px;
-}
-
-.encerramento-imagem img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 30px;
-    box-shadow: 0 20px 40px rgba(0,0,0,.12);
-}
-
-.encerramento-texto {
-    text-align: left;
-}
-
-.encerramento-texto h2 {
-    text-align: left;
-    margin-top: 15px;
-}
-
-.encerramento-texto p {
-    text-align: left;
-    margin-left: 0;
 }
 
 /* ==========================================
@@ -519,7 +404,7 @@ footer p {
 }
 
 /* ==========================================
-   ANIMAÇÕES
+   ANIMAÇÃO
 ========================================== */
 
 .hero,
@@ -531,8 +416,7 @@ footer p {
 .materiais,
 .paciente,
 .faq,
-.contato,
-.encerramento {
+.contato {
     animation: fadeUp .8s ease;
 }
 
@@ -587,7 +471,7 @@ img {
 }
 
 /* ==========================================
-   RESPONSIVIDADE - TABLET
+   TABLET
 ========================================== */
 
 @media (max-width: 1024px) {
@@ -603,11 +487,10 @@ img {
     .hero h1 {
         font-size: 48px;
     }
-
 }
 
 /* ==========================================
-   RESPONSIVIDADE - CELULAR
+   CELULAR
 ========================================== */
 
 @media (max-width: 768px) {
@@ -623,37 +506,93 @@ img {
         gap: 18px;
     }
 
+    /* HERO */
+
     .hero {
-        min-height: 100vh;
+        min-height: auto;
         padding-top: 170px;
-        padding-bottom: 60px;
-        align-items: flex-end;
+        padding-bottom: 0;
+        display: block;
+        overflow: visible;
+    }
+
+    /* FOTO NA PARTE DE CIMA */
+
+    .hero-image {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        height: 62vh;
+        min-height: 450px;
+        z-index: 1;
     }
 
     .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         object-position: center top;
+        border-radius: 0;
     }
+
+    /* TIRA A CAMADA SOBRE A FOTO */
 
     .hero::after {
-        background: rgba(255,255,255,.64);
+        display: none;
     }
+
+    /* CONTEÚDO */
 
     .hero-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        padding-bottom: 150px;
     }
 
+    /* TEXTO NO CANTO INFERIOR DA FOTO */
+
     .hero-text {
-        max-width: 100%;
-        text-align: center;
-        padding-bottom: 20px;
+        position: absolute;
+        left: 25px;
+        right: 25px;
+        bottom: calc(38vh + 30px);
+
+        max-width: none;
+        padding: 0;
+
+        text-align: left;
+        z-index: 10;
+    }
+
+    .subtitulo {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        margin-bottom: 8px;
     }
 
     .hero h1 {
-        font-size: 36px;
+        font-size: 34px;
+        line-height: 1.15;
+        margin: 8px 0;
     }
 
     .hero p {
-        font-size: 16px;
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 0;
+        max-width: 330px;
+    }
+
+    /* BOTÕES ABAIXO DA FOTO */
+
+    .hero-text .botoes {
+        position: absolute;
+        top: calc(62vh + 35px);
+        left: 0;
+        right: 0;
+        width: 100%;
     }
 
     .btn,
@@ -661,7 +600,7 @@ img {
         display: block;
         width: 100%;
         text-align: center;
-        margin: 15px 0;
+        margin: 12px 0;
     }
 
     section {
@@ -675,68 +614,10 @@ img {
     .cards {
         grid-template-columns: 1fr;
     }
-
-    .sobre-conteudo {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .sobre-imagem {
-        order: -1;
-    }
-
-    .sobre-texto {
-        text-align: center;
-    }
-
-    .sobre-texto h2 {
-        text-align: center;
-    }
-
-    .sobre-texto p {
-        text-align: center;
-        margin-left: auto;
-    }
-
-    .marca-destaque {
-        min-height: 350px;
-        background-size: 230px;
-    }
-
-    .marca-overlay img {
-        width: 140px;
-    }
-
-    .marca-overlay p {
-        font-size: 19px;
-    }
-
-    .encerramento-conteudo {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .encerramento-imagem img {
-        height: 420px;
-    }
-
-    .encerramento-texto {
-        text-align: center;
-    }
-
-    .encerramento-texto h2 {
-        text-align: center;
-    }
-
-    .encerramento-texto p {
-        text-align: center;
-        margin-left: auto;
-    }
-
 }
 
 /* ==========================================
-   RESPONSIVIDADE - CELULAR PEQUENO
+   CELULAR PEQUENO
 ========================================== */
 
 @media (max-width: 480px) {
@@ -750,11 +631,23 @@ img {
     }
 
     .subtitulo {
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    .hero-image {
+        height: 58vh;
+        min-height: 420px;
+    }
+
+    .hero-text {
+        bottom: calc(34vh + 35px);
+    }
+
+    .hero-text .botoes {
+        top: calc(58vh + 35px);
     }
 
     .logo img {
         width: 140px;
     }
-
 }
