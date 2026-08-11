@@ -110,17 +110,18 @@ nav a:hover {
 }
 /* ==========================================
    TEXTO DO HERO
-   MAIS ESCURO E NÍTIDO
+   MAIS FORTE E NÍTIDO
 ========================================== */
 .subtitulo {
     display: block;
-    color: #4f202c !important;
+    color: #713643 !important;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 14px;
-    font-weight: 800 !important;
+    font-weight: 700 !important;
     white-space: pre-line;
-    text-shadow: 0 1px 2px rgba(255,255,255,.35) !important;
+    /* Sem sombra */
+    text-shadow: none !important;
     filter: none !important;
     opacity: 1 !important;
 }
@@ -128,20 +129,22 @@ nav a:hover {
     font-family: 'Playfair Display', serif;
     font-size: 55px;
     margin: 20px 0;
-    color: #050505 !important;
+    color: #171717 !important;
     line-height: 1.2;
-    font-weight: 800 !important;
-    text-shadow: 0 1px 2px rgba(255,255,255,.35) !important;
+    font-weight: 700 !important;
+    /* Sem sombra */
+    text-shadow: none !important;
     filter: none !important;
     opacity: 1 !important;
 }
 .hero p {
     font-size: 18px;
-    color: #111111 !important;
+    color: #242424 !important;
     margin-bottom: 35px;
     line-height: 1.5;
-    font-weight: 600 !important;
-    text-shadow: 0 1px 2px rgba(255,255,255,.35) !important;
+    font-weight: 500 !important;
+    /* Sem sombra */
+    text-shadow: none !important;
     filter: none !important;
     opacity: 1 !important;
 }
@@ -577,14 +580,14 @@ img {
         text-align: left;
         z-index: 10;
     }
-    /* TEXTO DO HERO - MAIS NÍTIDO */
+    /* TEXTO MAIS FORTE NO CELULAR */
     .subtitulo {
         font-size: 10px;
         letter-spacing: 1.5px;
-        color: #4f202c !important;
+        color: #713643 !important;
         margin-bottom: 6px;
-        font-weight: 800 !important;
-        text-shadow: 0 1px 2px rgba(255,255,255,.35) !important;
+        font-weight: 700 !important;
+        text-shadow: none !important;
         filter: none !important;
         opacity: 1 !important;
     }
@@ -592,9 +595,9 @@ img {
         font-size: 34px;
         line-height: 1.1;
         margin: 8px 0;
-        color: #050505 !important;
-        font-weight: 800 !important;
-        text-shadow: 0 1px 2px rgba(255,255,255,.35) !important;
+        color: #171717 !important;
+        font-weight: 700 !important;
+        text-shadow: none !important;
         filter: none !important;
         opacity: 1 !important;
     }
@@ -603,9 +606,9 @@ img {
         line-height: 1.4;
         max-width: 320px;
         margin-bottom: 0;
-        color: #111111 !important;
-        font-weight: 600 !important;
-        text-shadow: 0 1px 2px rgba(255,255,255,.35) !important;
+        color: #242424 !important;
+        font-weight: 500 !important;
+        text-shadow: none !important;
         filter: none !important;
         opacity: 1 !important;
     }
