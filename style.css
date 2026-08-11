@@ -88,12 +88,12 @@ nav a:hover {
     border-radius: 0;
     box-shadow: none;
 }
-/* CAMADA LEVE SOBRE A FOTO */
+/* CAMADA ESBRANQUIÇADA LEVE SOBRE A FOTO */
 .hero::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255,255,255,.03);
+    background: rgba(255,255,255,.05);
     z-index: 1;
     pointer-events: none;
 }
@@ -110,15 +110,17 @@ nav a:hover {
 }
 /* ==========================================
    TEXTO DO HERO
+   MAIS FORTE E NÍTIDO
 ========================================== */
 .subtitulo {
     display: block;
-    color: #6f3542 !important;
+    color: #713643 !important;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 14px;
     font-weight: 700 !important;
     white-space: pre-line;
+    /* Sem sombra */
     text-shadow: none !important;
     filter: none !important;
     opacity: 1 !important;
@@ -127,18 +129,21 @@ nav a:hover {
     font-family: 'Playfair Display', serif;
     font-size: 55px;
     margin: 20px 0;
-    color: #151515 !important;
+    color: #171717 !important;
     line-height: 1.2;
     font-weight: 700 !important;
+    /* Sem sombra */
     text-shadow: none !important;
     filter: none !important;
     opacity: 1 !important;
 }
 .hero p {
     font-size: 18px;
-    color: #222222 !important;
+    color: #242424 !important;
     margin-bottom: 35px;
     line-height: 1.5;
+    font-weight: 500 !important;
+    /* Sem sombra */
     text-shadow: none !important;
     filter: none !important;
     opacity: 1 !important;
@@ -196,7 +201,6 @@ section p {
 }
 /* ==========================================
    FOTOS 01 E 02
-   MESMA PROPORÇÃO VISUAL DO HERO
 ========================================== */
 .imagem-destaque {
     width: 100%;
@@ -576,11 +580,13 @@ img {
         text-align: left;
         z-index: 10;
     }
+    /* TEXTO MAIS FORTE NO CELULAR */
     .subtitulo {
         font-size: 10px;
         letter-spacing: 1.5px;
-        color: #6f3542 !important;
+        color: #713643 !important;
         margin-bottom: 6px;
+        font-weight: 700 !important;
         text-shadow: none !important;
         filter: none !important;
         opacity: 1 !important;
@@ -589,7 +595,8 @@ img {
         font-size: 34px;
         line-height: 1.1;
         margin: 8px 0;
-        color: #151515 !important;
+        color: #171717 !important;
+        font-weight: 700 !important;
         text-shadow: none !important;
         filter: none !important;
         opacity: 1 !important;
@@ -599,11 +606,13 @@ img {
         line-height: 1.4;
         max-width: 320px;
         margin-bottom: 0;
-        color: #222222 !important;
+        color: #242424 !important;
+        font-weight: 500 !important;
         text-shadow: none !important;
         filter: none !important;
         opacity: 1 !important;
     }
+    /* BOTÕES CONTINUAM FORA DA FOTO */
     .hero-text .botoes {
         position: absolute;
         top: 100%;
@@ -759,26 +768,4 @@ img {
     .logo img {
         width: 140px;
     }
-}
-/* ==========================================
-   CORREÇÃO FINAL - TEXTO DO HERO
-========================================== */
-.hero .subtitulo,
-.hero h1,
-.hero p {
-    text-shadow: none !important;
-    filter: none !important;
-    opacity: 1 !important;
-}
-.hero .subtitulo {
-    color: #6f3542 !important;
-    font-weight: 700 !important;
-}
-.hero h1 {
-    color: #151515 !important;
-    font-weight: 700 !important;
-}
-.hero p {
-    color: #222222 !important;
-    font-weight: 400 !important;
 }
