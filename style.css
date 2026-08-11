@@ -2,28 +2,35 @@
    BRUNA FARIA
    NUTRICIONISTA CLÍNICA, ESPORTIVA E ESTÉTICA
 ========================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Playfair Display', sans-serif;
     background: #faf7f4;
     color: #9c5d67;
     line-height: 1.5;
 }
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
+
+
 /* ==========================================
    HEADER
 ========================================== */
+
 header {
     position: fixed;
     width: 100%;
@@ -33,23 +40,27 @@ header {
     box-shadow: 0 2px 20px rgba(0,0,0,.05);
     z-index: 999;
 }
+
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 18px 0;
 }
+
 .logo img {
     width: 150px;
     height: auto;
     display: block;
 }
+
 nav ul {
     display: flex;
     gap: 24px;
     list-style: none;
     align-items: center;
 }
+
 nav a {
     text-decoration: none;
     color: #555;
@@ -58,12 +69,16 @@ nav a {
     white-space: nowrap;
     transition: .3s;
 }
+
 nav a:hover {
     color: #b88b7d;
 }
+
+
 /* ==========================================
    HERO - DESKTOP
 ========================================== */
+
 .hero {
     position: relative;
     min-height: 100vh;
@@ -73,6 +88,7 @@ nav a:hover {
     align-items: flex-end;
     overflow: hidden;
 }
+
 .hero-image {
     position: absolute;
     inset: 0;
@@ -80,6 +96,7 @@ nav a:hover {
     height: 100%;
     z-index: 0;
 }
+
 .hero-image img {
     width: 100%;
     height: 100%;
@@ -88,65 +105,57 @@ nav a:hover {
     border-radius: 0;
     box-shadow: none;
 }
+
 .hero::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255,255,255,.03);
+    background: rgba(255,255,255,.58);
     z-index: 1;
-    pointer-events: none;
 }
+
 .hero-content {
     position: relative;
     z-index: 2;
     width: 100%;
 }
+
 .hero-text {
     position: relative;
-    z-index: 10;
+    z-index: 3;
     max-width: 650px;
     padding-bottom: 20px;
 }
-/* ==========================================
-   TEXTO DO HERO
-   SOMENTE MAIS ESCURO E NÍTIDO
-========================================== */
+
 .subtitulo {
     display: block;
-    color: #542630 !important;
+    color: #b88b7d;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 14px;
-    font-weight: 800 !important;
+    font-weight: 600;
     white-space: pre-line;
-    text-shadow: 0 1px 2px rgba(255,255,255,.35) !important;
-    filter: none !important;
-    opacity: 1 !important;
 }
+
 .hero h1 {
     font-family: 'Playfair Display', serif;
     font-size: 55px;
     margin: 20px 0;
-    color: #111111 !important;
+    color: #2d2d2d;
     line-height: 1.2;
-    font-weight: 700 !important;
-    text-shadow: 0 1px 2px rgba(255,255,255,.35) !important;
-    filter: none !important;
-    opacity: 1 !important;
 }
+
 .hero p {
     font-size: 18px;
-    color: #181818 !important;
+    color: #666;
     margin-bottom: 35px;
-    line-height: 1.5;
-    font-weight: 500 !important;
-    text-shadow: 0 1px 2px rgba(255,255,255,.35) !important;
-    filter: none !important;
-    opacity: 1 !important;
 }
+
+
 /* ==========================================
    BOTÕES
 ========================================== */
+
 .btn {
     display: inline-block;
     background: #b88b7d;
@@ -158,10 +167,12 @@ nav a:hover {
     margin-right: 15px;
     box-shadow: 0 10px 20px rgba(184,139,125,.25);
 }
+
 .btn:hover {
     background: #9d7b6d;
     transform: translateY(-3px);
 }
+
 .btn-outline {
     display: inline-block;
     border: 2px solid #b88b7d;
@@ -171,17 +182,22 @@ nav a:hover {
     text-decoration: none;
     transition: .3s;
 }
+
 .btn-outline:hover {
     background: #b88b7d;
     color: white;
     transform: translateY(-3px);
 }
+
+
 /* ==========================================
    SEÇÕES
 ========================================== */
+
 section {
     padding: 100px 0;
 }
+
 section h2 {
     font-family: 'Playfair Display', serif;
     font-size: 42px;
@@ -189,15 +205,20 @@ section h2 {
     color: #2f2f2f;
     margin-bottom: 20px;
 }
+
 section p {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 20px;
     color: #666;
 }
+
+
 /* ==========================================
    FOTOS 01 E 02
+   MESMA PROPORÇÃO VISUAL DO HERO
 ========================================== */
+
 .imagem-destaque {
     width: 100%;
     height: 100vh;
@@ -208,6 +229,7 @@ section p {
     overflow: hidden;
     position: relative;
 }
+
 .imagem-destaque img {
     display: block;
     width: 100%;
@@ -215,15 +237,19 @@ section p {
     object-fit: cover;
     object-position: center center;
 }
+
+
 /* ==========================================
    CARDS
 ========================================== */
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-top: 50px;
 }
+
 .card {
     background: #fff;
     padding: 35px;
@@ -233,22 +259,27 @@ section p {
     transition: .35s;
     overflow: hidden;
 }
+
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 18px 35px rgba(0,0,0,.10);
 }
+
 .card i {
     font-size: 40px;
     color: #b88b7d;
     margin-bottom: 20px;
 }
+
 .card h3 {
     margin-bottom: 15px;
     color: #2f2f2f;
 }
+
 .card p {
     font-size: 15px;
 }
+
 .card::after {
     content: "";
     display: block;
@@ -258,63 +289,89 @@ section p {
     margin: 25px auto 0;
     transition: .4s;
 }
+
 .card:hover::after {
     width: 80px;
 }
+
+
 /* ==========================================
    MÉTODO BF
 ========================================== */
+
 .metodo {
     background: #f5efea;
 }
+
+
 /* ==========================================
    SERVIÇOS
 ========================================== */
+
 .servicos {
     background: #fff;
 }
+
+
 /* ==========================================
    PÚBLICO
 ========================================== */
+
 .publico {
     background: #faf7f4;
 }
+
 .publico .card {
     font-size: 40px;
     font-weight: 600;
 }
+
+
 /* ==========================================
    ACOMPANHAMENTOS
 ========================================== */
+
 .acompanhamentos {
     background: white;
 }
+
 .acompanhamentos .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .acompanhamentos .btn {
     margin-top: 25px;
 }
+
+
 /* ==========================================
    MATERIAIS
 ========================================== */
+
 .materiais {
     background: #f5efea;
 }
+
+
 /* ==========================================
    ÁREA DO PACIENTE
 ========================================== */
+
 .paciente {
     background: white;
 }
+
+
 /* ==========================================
    FAQ
 ========================================== */
+
 .faq {
     background: #faf7f4;
 }
+
 .pergunta {
     background: white;
     padding: 25px;
@@ -323,13 +380,17 @@ section p {
     max-width: 900px;
     box-shadow: 0 5px 20px rgba(0,0,0,.05);
 }
+
 .pergunta h3 {
     margin-bottom: 10px;
     color: #b88b7d;
 }
+
+
 /* ==========================================
    CONTATO + FOTO 03
 ========================================== */
+
 .contato {
     position: relative;
     min-height: 650px;
@@ -338,6 +399,7 @@ section p {
     align-items: flex-end;
     overflow: hidden;
 }
+
 .contato-image {
     position: absolute;
     inset: 0;
@@ -345,12 +407,14 @@ section p {
     height: 100%;
     z-index: 0;
 }
+
 .contato-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center center;
 }
+
 .contato-overlay {
     position: absolute;
     inset: 0;
@@ -363,6 +427,7 @@ section p {
     );
     z-index: 1;
 }
+
 .contato-content {
     position: relative;
     z-index: 2;
@@ -371,6 +436,7 @@ section p {
     padding-top: 220px;
     padding-bottom: 70px;
 }
+
 .contato-content h2 {
     text-align: center;
     max-width: 700px;
@@ -380,6 +446,7 @@ section p {
     font-size: 48px;
     line-height: 1.2;
 }
+
 .contato-content p {
     text-align: center;
     max-width: 650px;
@@ -388,47 +455,60 @@ section p {
     font-size: 18px;
     line-height: 1.6;
 }
+
 .contato-content .btn {
     display: inline-block;
     margin: 0;
 }
+
+
 /* ==========================================
    RODAPÉ
 ========================================== */
+
 footer {
     background: #2d2d2d;
     color: white;
     padding: 60px 0;
     text-align: center;
 }
+
 footer h3 {
     font-family: 'Playfair Display', serif;
     font-size: 34px;
     margin-bottom: 10px;
 }
+
 footer p {
     color: #d7d7d7;
 }
+
 .redes {
     margin: 30px 0;
 }
+
 .redes a {
     color: white;
     font-size: 24px;
     margin: 0 12px;
     transition: .3s;
 }
+
 .redes a:hover {
     color: #d9b7a8;
 }
+
 .copy {
     margin-top: 30px;
     font-size: 14px;
     color: #aaa;
 }
+
+
 /* ==========================================
    ANIMAÇÃO
 ========================================== */
+
 .hero,
 .sobre,
 .metodo,
@@ -441,89 +521,125 @@ footer p {
 .contato {
     animation: fadeUp .8s ease;
 }
+
 @keyframes fadeUp {
+
     from {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
+
 /* ==========================================
    IMAGENS
 ========================================== */
+
 img {
     transition: .4s;
 }
+
+
 /* ==========================================
    BARRA DE ROLAGEM
 ========================================== */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: #f3efeb;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #b88b7d;
     border-radius: 20px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: #9d7b6d;
 }
+
+
 /* ==========================================
    SELEÇÃO
 ========================================== */
+
 ::selection {
     background: #d9b7a8;
     color: white;
 }
+
+
 /* ==========================================
    TABLET
 ========================================== */
+
 @media (max-width: 1024px) {
+
     .hero {
         min-height: 100vh;
     }
+
     .hero-text {
         max-width: 580px;
     }
+
     .hero h1 {
         font-size: 48px;
     }
+
     nav ul {
         gap: 18px;
     }
+
     nav a {
         font-size: 13px;
     }
+
     .contato-content h2 {
         font-size: 44px;
     }
+
     .imagem-destaque {
         height: 100vh;
         min-height: 600px;
     }
 }
+
+
 /* ==========================================
    CELULAR
 ========================================== */
+
 @media (max-width: 768px) {
+
     header .container {
         flex-direction: column;
         gap: 15px;
     }
+
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
         gap: 14px;
     }
+
     nav a {
         font-size: 13px;
     }
-    /* HERO */
+
+
+    /* ==========================================
+       HERO
+    ========================================== */
+
     .hero {
         min-height: auto;
         padding-top: 170px;
@@ -531,6 +647,7 @@ img {
         display: block;
         overflow: visible;
     }
+
     .hero-image {
         position: relative;
         inset: auto;
@@ -539,6 +656,7 @@ img {
         min-height: 480px;
         z-index: 1;
     }
+
     .hero-image img {
         width: 100%;
         height: 100%;
@@ -546,16 +664,18 @@ img {
         object-position: center top;
         border-radius: 0;
     }
+
     .hero::after {
         display: block;
         background: linear-gradient(
             to bottom,
-            rgba(255,255,255,0) 35%,
-            rgba(255,255,255,.05) 55%,
-            rgba(255,255,255,.45) 100%
+            rgba(255,255,255,0) 45%,
+            rgba(255,255,255,.15) 60%,
+            rgba(255,255,255,.78) 100%
         );
         z-index: 2;
     }
+
     .hero-content {
         position: relative;
         display: flex;
@@ -563,6 +683,7 @@ img {
         width: 100%;
         padding: 0;
     }
+
     .hero-text {
         position: absolute;
         left: 0;
@@ -572,39 +693,31 @@ img {
         max-width: none;
         padding: 0 25px 28px;
         text-align: left;
-        z-index: 10;
+        z-index: 5;
     }
+
     .subtitulo {
         font-size: 10px;
         letter-spacing: 1.5px;
-        color: #542630 !important;
+        color: #9c5d67;
         margin-bottom: 6px;
-        font-weight: 800 !important;
-        text-shadow: 0 1px 2px rgba(255,255,255,.35) !important;
-        filter: none !important;
-        opacity: 1 !important;
     }
+
     .hero h1 {
         font-size: 34px;
         line-height: 1.1;
         margin: 8px 0;
-        color: #111111 !important;
-        font-weight: 700 !important;
-        text-shadow: 0 1px 2px rgba(255,255,255,.35) !important;
-        filter: none !important;
-        opacity: 1 !important;
+        color: #2d2d2d;
     }
+
     .hero p {
         font-size: 15px;
         line-height: 1.4;
         max-width: 320px;
         margin-bottom: 0;
-        color: #181818 !important;
-        font-weight: 500 !important;
-        text-shadow: 0 1px 2px rgba(255,255,255,.35) !important;
-        filter: none !important;
-        opacity: 1 !important;
+        color: #555;
     }
+
     .hero-text .botoes {
         position: absolute;
         top: 100%;
@@ -614,6 +727,7 @@ img {
         padding: 25px 25px 65px;
         background: #faf7f4;
     }
+
     .btn,
     .btn-outline {
         display: block;
@@ -621,10 +735,16 @@ img {
         text-align: center;
         margin: 12px 0;
     }
+
     .hero + section {
         padding-top: 160px;
     }
-    /* FOTOS 01 E 02 */
+
+
+    /* ==========================================
+       FOTOS 01 E 02 - CELULAR
+    ========================================== */
+
     .imagem-destaque {
         width: 100%;
         height: 65vh;
@@ -633,33 +753,49 @@ img {
         padding: 0;
         overflow: hidden;
     }
+
     .imagem-destaque img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center center;
     }
-    /* SEÇÕES */
+
+
+    /* ==========================================
+       SEÇÕES
+    ========================================== */
+
     section {
         padding: 70px 0;
     }
+
     section h2 {
         font-size: 32px;
     }
+
     .cards {
         grid-template-columns: 1fr;
     }
-    /* CONTATO + FOTO 03 */
+
+
+    /* ==========================================
+       CONTATO + FOTO 03 - CELULAR
+    ========================================== */
+
     .contato {
         min-height: 600px;
         align-items: flex-end;
     }
+
     .contato-image {
         height: 100%;
     }
+
     .contato-image img {
         object-position: center center;
     }
+
     .contato-overlay {
         background: linear-gradient(
             to bottom,
@@ -669,23 +805,27 @@ img {
             rgba(255,255,255,.96) 100%
         );
     }
+
     .contato-content {
         padding: 240px 25px 45px;
         width: 100%;
         text-align: center;
     }
+
     .contato-content h2 {
         font-size: 34px;
         line-height: 1.15;
         margin: 0 auto 15px;
         text-align: center;
     }
+
     .contato-content p {
         font-size: 15px;
         line-height: 1.5;
         margin: 0 auto 25px;
         text-align: center;
     }
+
     .contato-content .btn {
         display: inline-block;
         width: auto;
@@ -694,69 +834,88 @@ img {
         margin: 0 auto;
     }
 }
+
+
 /* ==========================================
    CELULAR PEQUENO
 ========================================== */
+
 @media (max-width: 480px) {
+
     .container {
         width: 92%;
     }
+
     .hero {
         padding-top: 160px;
     }
+
     .hero-image {
         height: 62vh;
         min-height: 440px;
     }
+
     .hero-text {
         padding: 0 22px 25px;
     }
+
     .hero h1 {
         font-size: 30px;
     }
+
     .hero p {
         font-size: 14px;
         max-width: 300px;
     }
+
     .subtitulo {
         font-size: 9px;
     }
+
     .hero-text .botoes {
         padding: 22px 22px 60px;
     }
+
     .hero + section {
         padding-top: 155px;
     }
+
+
     /* FOTOS */
+
     .imagem-destaque {
         height: 62vh;
         min-height: 440px;
     }
+
     .imagem-destaque img {
         object-position: center center;
     }
+
+
     /* CONTATO */
+
     .contato {
         min-height: 560px;
     }
+
     .contato-content {
         padding: 210px 22px 35px;
     }
+
     .contato-content h2 {
         font-size: 30px;
     }
+
     .contato-content p {
         font-size: 14px;
     }
+
     .contato-content .btn {
         min-width: 210px;
     }
+
     .logo img {
         width: 140px;
     }
 }
-/* ==========================================
-   IMPORTANTE
-   "Prazer, sou Bruna Faria." NÃO É HERO.
-   Não alterar .sobre.
-========================================== */
