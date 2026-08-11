@@ -790,7 +790,78 @@ img:hover{
     background:#d9b7a8;
     color:white;
 
+/* ==========================================
+   HERO - FOTO EM DESTAQUE
+========================================== */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
 }
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Foto ocupando toda a área do HERO */
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Camada suave para o texto continuar legível */
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.58);
+    z-index: 1;
+}
+
+/* Texto do HERO */
+
+.hero-text {
+    position: relative;
+    z-index: 3;
+    max-width: 650px;
+}
+
+/* Celular */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 100vh;
+    }
+
+    .hero-image img {
+        object-position: center top;
+    }
+
+    .hero::after {
+        background: rgba(255, 255, 255, 0.62);
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+}}
 
 /* ==========================================
    FIM DO CSS
