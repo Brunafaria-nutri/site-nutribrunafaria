@@ -667,16 +667,18 @@ img {
     }
 
     .hero::after {
-    display: block;
+    content: "";
+    position: absolute;
+    inset: 0;
     background: linear-gradient(
         to top,
-        rgba(255,255,255,0.95) 0%,
-        rgba(255,255,255,0.75) 20%,
-        rgba(255,255,255,0.20) 40%,
-        rgba(255,255,255,0) 60%
+        rgba(0,0,0,0.45) 0%,
+        rgba(0,0,0,0.25) 20%,
+        rgba(0,0,0,0.10) 40%,
+        rgba(0,0,0,0) 65%
     );
     z-index: 2;
-   }
+    }
 
     .hero-content {
         position: relative;
@@ -690,13 +692,13 @@ img {
     position: absolute;
     left: 20px;
     right: 20px;
-    bottom: 60px;
+    bottom: 110px;
     width: 100%;
     max-width: none;
-    padding: 0 25px 28px;
+    padding: 0 25px;
     text-align: left;
     z-index: 5;
-   }
+    }
 
     .subtitulo {
         font-size: 10px;
