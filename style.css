@@ -49,7 +49,7 @@ header .container {
 }
 
 .logo img {
-    width: 150px;
+    width: 110px;
     height: auto;
     display: block;
 }
@@ -620,16 +620,21 @@ img {
 
 @media (max-width: 768px) {
 
+    @media (max-width: 768px) {
+
     header .container {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 0;
     }
 
     nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 14px;
-    }
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+   }
 
     nav a {
         font-size: 13px;
@@ -905,6 +910,6 @@ img {
     }
 
     .logo img {
-        width: 140px;
+        width: 75px;
     }
 }
