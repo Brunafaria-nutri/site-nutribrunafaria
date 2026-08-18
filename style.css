@@ -640,8 +640,7 @@ img {
         font-size: 13px;
     }
 
-
-    /* ==========================================
+/* ==========================================
    HERO
 ========================================== */
 
@@ -686,21 +685,25 @@ img {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 60px;
+    bottom: 40px;
     z-index: 5;
 }
 
 .hero-text {
-    width: 90%;
-    max-width: 350px;
-    margin-left: 25px;
+    position: absolute;
+    left: 25px;
+    bottom: 200px;
+    width: 85%;
+    max-width: 340px;
     text-align: left;
+    z-index: 5;
+    padding: 0;
 }
 
 .subtitulo {
     font-size: 10px;
     letter-spacing: 1.5px;
-    color: rgba(255,255,255,.85);
+    color: #9c5d67;
     margin-bottom: 8px;
 }
 
@@ -708,9 +711,8 @@ img {
     font-size: 42px;
     line-height: 1.05;
     margin: 10px 0;
-    color: #ffffff;
+    color: #5f5f5f;
     font-weight: 700;
-    text-shadow: 0 3px 15px rgba(0,0,0,.40);
 }
 
 .hero p {
@@ -718,10 +720,9 @@ img {
     line-height: 1.5;
     max-width: 320px;
     margin-bottom: 25px;
-    color: rgba(255,255,255,.95);
-    text-shadow: 0 2px 10px rgba(0,0,0,.35);
+    color: #6d6d6d;
 }
-
+       
 .hero-text .botoes {
     width: 100%;
     margin-top: 25px;
