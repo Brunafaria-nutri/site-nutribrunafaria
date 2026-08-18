@@ -26,7 +26,6 @@ body {
     margin: auto;
 }
 
-
 /* ==========================================
    HEADER
 ========================================== */
@@ -73,7 +72,6 @@ nav a {
 nav a:hover {
     color: #b88b7d;
 }
-
 
 /* ==========================================
    HERO - DESKTOP
@@ -151,7 +149,6 @@ nav a:hover {
     margin-bottom: 35px;
 }
 
-
 /* ==========================================
    BOTÕES
 ========================================== */
@@ -189,7 +186,6 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-
 /* ==========================================
    SEÇÕES
 ========================================== */
@@ -212,7 +208,6 @@ section p {
     margin: 0 auto 20px;
     color: #666;
 }
-
 
 /* ==========================================
    FOTOS 01 E 02
@@ -237,7 +232,6 @@ section p {
     object-fit: cover;
     object-position: center center;
 }
-
 
 /* ==========================================
    CARDS
@@ -294,7 +288,6 @@ section p {
     width: 80px;
 }
 
-
 /* ==========================================
    MÉTODO BF
 ========================================== */
@@ -303,7 +296,6 @@ section p {
     background: #f5efea;
 }
 
-
 /* ==========================================
    SERVIÇOS
 ========================================== */
@@ -311,7 +303,6 @@ section p {
 .servicos {
     background: #fff;
 }
-
 
 /* ==========================================
    PÚBLICO
@@ -325,7 +316,6 @@ section p {
     font-size: 40px;
     font-weight: 600;
 }
-
 
 /* ==========================================
    ACOMPANHAMENTOS
@@ -345,7 +335,6 @@ section p {
     margin-top: 25px;
 }
 
-
 /* ==========================================
    MATERIAIS
 ========================================== */
@@ -354,7 +343,6 @@ section p {
     background: #f5efea;
 }
 
-
 /* ==========================================
    ÁREA DO PACIENTE
 ========================================== */
@@ -362,7 +350,6 @@ section p {
 .paciente {
     background: white;
 }
-
 
 /* ==========================================
    FAQ
@@ -385,7 +372,6 @@ section p {
     margin-bottom: 10px;
     color: #b88b7d;
 }
-
 
 /* ==========================================
    CONTATO + FOTO 03
@@ -461,7 +447,6 @@ section p {
     margin: 0;
 }
 
-
 /* ==========================================
    RODAPÉ
 ========================================== */
@@ -504,7 +489,6 @@ footer p {
     color: #aaa;
 }
 
-
 /* ==========================================
    ANIMAÇÃO
 ========================================== */
@@ -535,7 +519,6 @@ footer p {
     }
 }
 
-
 /* ==========================================
    IMAGENS
 ========================================== */
@@ -543,7 +526,6 @@ footer p {
 img {
     transition: .4s;
 }
-
 
 /* ==========================================
    BARRA DE ROLAGEM
@@ -566,7 +548,6 @@ img {
     background: #9d7b6d;
 }
 
-
 /* ==========================================
    SELEÇÃO
 ========================================== */
@@ -575,7 +556,6 @@ img {
     background: #d9b7a8;
     color: white;
 }
-
 
 /* ==========================================
    TABLET
@@ -613,16 +593,13 @@ img {
     }
 }
 
-
 /* ==========================================
    CELULAR
 ========================================== */
 
 @media (max-width: 768px) {
 
-    @media (max-width: 768px) {
-
-    header .container {
+   header .container {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -630,7 +607,7 @@ img {
         padding: 10px 0;
     }
 
-    nav ul {
+   nav ul {
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: 8px;
@@ -640,101 +617,109 @@ img {
         font-size: 13px;
     }
 
-/* ==========================================
-   HERO
-========================================== */
+    /* ==========================================
+       HERO
+    ========================================== */
 
-.hero {
-    position: relative;
-    min-height: 100vh;
-    padding-top: 170px;
-    overflow: hidden;
-}
+    .hero {
+        min-height: auto;
+        padding-top: 170px;
+        padding-bottom: 0;
+        display: block;
+        overflow: visible;
+    }
 
-.hero-image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
+    .hero-image {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        height: 65vh;
+        min-height: 480px;
+        z-index: 1;
+    }
 
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    filter: brightness(90%);
-}
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: 0;
+    }
 
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(0,0,0,0.65) 0%,
-        rgba(0,0,0,0.40) 35%,
-        rgba(0,0,0,0.15) 65%,
-        rgba(0,0,0,0) 100%
-    );
-    z-index: 1;
-}
+    .hero::after {
+        display: block;
+        background: linear-gradient(
+            to bottom,
+            rgba(255,255,255,0) 45%,
+            rgba(255,255,255,.15) 60%,
+            rgba(255,255,255,.78) 100%
+        );
+        z-index: 2;
+    }
 
-.hero-content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 40px;
-    z-index: 5;
-}
+    .hero-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
 
-.hero-text {
-    position: absolute;
-    left: 25px;
-    bottom: 200px;
-    width: 85%;
-    max-width: 340px;
-    text-align: left;
-    z-index: 5;
-    padding: 0;
-}
+    .hero-text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: none;
+        padding: 0 25px 28px;
+        text-align: left;
+        z-index: 5;
+    }
 
-.subtitulo {
-    font-size: 10px;
-    letter-spacing: 1.5px;
-    color: #9c5d67;
-    margin-bottom: 8px;
-}
+    .subtitulo {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        color: #9c5d67;
+        margin-bottom: 6px;
+    }
 
-.hero h1 {
-    font-size: 42px;
-    line-height: 1.05;
-    margin: 10px 0;
-    color: #5f5f5f;
-    font-weight: 700;
-}
+    .hero h1 {
+        font-size: 34px;
+        line-height: 1.1;
+        margin: 8px 0;
+        color: #2d2d2d;
+    }
 
-.hero p {
-    font-size: 16px;
-    line-height: 1.5;
-    max-width: 320px;
-    margin-bottom: 25px;
-    color: #6d6d6d;
-}
-       
-.hero-text .botoes {
-    width: 100%;
-    margin-top: 25px;
-}
+    .hero p {
+        font-size: 15px;
+        line-height: 1.4;
+        max-width: 320px;
+        margin-bottom: 0;
+        color: #555;
+    }
 
-.btn,
-.btn-outline {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin: 12px 0;
-}
+    .hero-text .botoes {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 25px 25px 65px;
+        background: #faf7f4;
+    }
+
+    .btn,
+    .btn-outline {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 12px 0;
+    }
+
+    .hero + section {
+        padding-top: 160px;
+    }
 
     /* ==========================================
        FOTOS 01 E 02 - CELULAR
@@ -756,7 +741,6 @@ img {
         object-position: center center;
     }
 
-
     /* ==========================================
        SEÇÕES
     ========================================== */
@@ -772,7 +756,6 @@ img {
     .cards {
         grid-template-columns: 1fr;
     }
-
 
     /* ==========================================
        CONTATO + FOTO 03 - CELULAR
@@ -830,7 +813,6 @@ img {
     }
 }
 
-
 /* ==========================================
    CELULAR PEQUENO
 ========================================== */
@@ -875,7 +857,6 @@ img {
         padding-top: 155px;
     }
 
-
     /* FOTOS */
 
     .imagem-destaque {
@@ -886,7 +867,6 @@ img {
     .imagem-destaque img {
         object-position: center center;
     }
-
 
     /* CONTATO */
 
@@ -911,6 +891,6 @@ img {
     }
 
     .logo img {
-        width: 75px;
+        width: 70px;
     }
 }
