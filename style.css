@@ -641,11 +641,12 @@ img {
     ========================================== */
 
     .hero {
-        min-height: auto;
-        padding-top: 170px;
-        padding-bottom: 0;
-        display: block;
-        overflow: visible;
+    position: relative;
+    min-height: 100vh;
+    padding-top: 170px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
     }
 
     .hero-image {
@@ -670,9 +671,15 @@ img {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0,.35);
-    z-index: 2;
-    }
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.55) 0%,
+        rgba(0,0,0,0.35) 25%,
+        rgba(0,0,0,0.15) 50%,
+        rgba(0,0,0,0) 75%
+    );
+    z-index: 1;
+   }
 
     .hero-content {
         position: relative;
