@@ -670,13 +670,7 @@ img {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(0,0,0,0.45) 0%,
-        rgba(0,0,0,0.25) 20%,
-        rgba(0,0,0,0.10) 40%,
-        rgba(0,0,0,0) 65%
-    );
+    background: rgba(0,0,0,0,.35);
     z-index: 2;
     }
 
@@ -690,12 +684,11 @@ img {
 
     .hero-text {
     position: absolute;
-    left: 20px;
-    right: 20px;
-    bottom: 110px;
-    width: 100%;
-    max-width: none;
-    padding: 0 25px;
+    left: 0px;
+    bottom: 40px;
+    width: 90%;
+    max-width: 350px;
+    padding: 28px;
     text-align: left;
     z-index: 5;
     }
@@ -708,28 +701,26 @@ img {
     }
 
     .hero h1 {
-        font-size: 34px;
-        line-height: 1.1;
-        margin: 8px 0;
-        color: #2d2d2d;
+        font-size: 42px;
+        line-height: 1.05;
+        margin: 10px 0;
+        color: #ffffff;
        font-weight: 700;
     }
 
     .hero p {
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.5;
         max-widht: 320px;
-        margin-bottom: 0;
-        color: #444;     
+        margin-bottom: 20px;
+        color: rgba(255,255,255,.92);     
     }
 
     .hero-text .botoes {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        width: 100%;
-        padding: 25px 25px 65px;
+        position: relative;
+        width: 100%
+        padding: 0;
+        margin-top:25px;
         background: #transparent;
     }
 
