@@ -723,8 +723,12 @@ img {
     }
 
     .hero + section {
-        padding-top: 240px;
+        padding-top: 160px;
     }
+
+   .sobre {
+      padding-top: 220px;
+   }
 
     /* ==========================================
        FOTOS 01 E 02 - CELULAR
