@@ -624,7 +624,7 @@ img {
     .hero {
         min-height: auto;
         padding-top: 170px;
-        padding-bottom: 0;
+        padding-bottom: 180px;
         display: block;
         overflow: visible;
     }
