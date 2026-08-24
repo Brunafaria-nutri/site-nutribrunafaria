@@ -983,58 +983,6 @@ img {
 
 @media (min-width: 769px) {
 
-    #contato.contato {
-        position: relative !important;
-        min-height: 600px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        overflow: hidden !important;
-    }
-
-    #contato .contato-image {
-        position: absolute !important;
-        width: 600px !important;
-        height: 500px !important;
-
-        /* sobe a foto */
-        top: 43% !important;
-
-        left: 50% !important;
-        transform: translate(-50%, -50%) !important;
-        overflow: hidden !important;
-    }
-
-    #contato .contato-image img {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: contain !important;
-        object-position: center !important;
-        display: block !important;
-    }
-
-    #contato .contato-overlay {
-        position: absolute !important;
-        inset: 0 !important;
-        z-index: 1 !important;
-    }
-
-    #contato .contato-content {
-        position: relative !important;
-        z-index: 2 !important;
-        max-width: 700px !important;
-        text-align: center !important;
-
-        /* desce o texto */
-        transform: translateY(20px) !important;
-    }
-
-}
-
-/* FOTO 03 - AJUSTE FINAL - SOMENTE DESKTOP */
-
-@media (min-width: 769px) {
-
     #contato .contato-image {
         width: 560px !important;
         height: 470px !important;
