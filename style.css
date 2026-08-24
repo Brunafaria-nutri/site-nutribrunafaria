@@ -1030,3 +1030,26 @@ img {
     }
 
 }
+
+/* FOTO 03 - AJUSTE FINAL - SOMENTE DESKTOP */
+
+@media (min-width: 769px) {
+
+    #contato .contato-image {
+        width: 560px !important;
+        height: 470px !important;
+        top: 45% !important;
+    }
+
+    #contato .contato-image img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+        object-position: center 15% !important;
+    }
+
+    #contato .contato-content {
+        transform: translateY(10px) !important;
+    }
+
+}
