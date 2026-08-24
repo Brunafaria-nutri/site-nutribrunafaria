@@ -958,12 +958,12 @@ img {
 
     /* Foto 02 - desce levemente o enquadramento */
     .imagem-destaque img[src="imagens/bruna-02.jpg"] {
-        object-position: center 15% !important;
+        object-position: center 10% !important;
     }
 
     /* Foto 03 - desce levemente o enquadramento */
     .contato-image img[src="imagens/bruna-03.jpg"] {
-        object-position: center 15% !important;
+        object-position: center 8% !important;
     }
 
 }
