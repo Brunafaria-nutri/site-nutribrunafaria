@@ -904,3 +904,45 @@ img {
         width: 70px;
     }
 }
+/* ==========================================
+   HERO - FOTO LATERAL SOMENTE NO DESKTOP
+========================================== */
+
+@media (min-width: 769px) {
+
+    #inicio.hero {
+        min-height: 520px;
+        padding: 60px 0;
+    }
+
+    #inicio .hero-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    #inicio .hero-text {
+        width: 58%;
+        position: relative;
+        z-index: 2;
+    }
+
+    #inicio .hero-image {
+        width: 35%;
+        height: 420px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    #inicio .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+}
