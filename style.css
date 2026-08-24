@@ -1017,7 +1017,7 @@ img {
         object-fit: cover !important;
 
         /* mostra mais a parte de cima da foto */
-        object-position: center 25% !important;
+        object-position: center 35% !important;
 
         display: block !important;
     }
@@ -1038,7 +1038,7 @@ img {
         max-width: 760px !important;
 
         margin: 0 auto !important;
-        padding-top: 210px !important;
+        padding-top: 200px !important;
 
         text-align: center !important;
     }
