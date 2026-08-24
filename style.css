@@ -979,8 +979,8 @@ img {
     }
 
 
-  /* ==========================================
-   FOTO 03 - FOTO INTEIRA CENTRALIZADA
+ /* ==========================================
+   FOTO 03 - PROPORCIONAL AO TEXTO
    SOMENTE DESKTOP
 ========================================== */
 
@@ -989,16 +989,13 @@ img {
     #contato.contato {
         position: relative !important;
         min-height: 600px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
         overflow: hidden !important;
     }
 
     #contato .contato-image {
         position: absolute !important;
-        width: 600px !important;
-        height: 500px !important;
+        width: 720px !important;
+        height: 480px !important;
         top: 50% !important;
         left: 50% !important;
         transform: translate(-50%, -50%) !important;
@@ -1008,8 +1005,8 @@ img {
     #contato .contato-image img {
         width: 100% !important;
         height: 100% !important;
-        object-fit: contain !important;
-        object-position: center !important;
+        object-fit: cover !important;
+        object-position: center 20% !important;
         display: block !important;
     }
 
@@ -1022,7 +1019,7 @@ img {
     #contato .contato-content {
         position: relative !important;
         z-index: 2 !important;
-        max-width: 700px !important;
+        max-width: 720px !important;
         text-align: center !important;
         transform: translateY(-80px) !important;
     }
