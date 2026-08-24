@@ -917,19 +917,22 @@ img {
 
     #inicio .hero-content {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         gap: 50px;
     }
 
     #inicio .hero-text {
+        order: 1; 
         width: 58%;
         position: relative;
         z-index: 2;
     }
 
     #inicio .hero-image {
-        width: 35%;
+        order: 2;
+        width: 32%;
         height: 420px;
         display: flex;
         align-items: center;
