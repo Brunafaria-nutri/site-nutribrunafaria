@@ -979,7 +979,12 @@ img {
     }
 
 
-    /* FOTO 03 - MENOR, CENTRALIZADA ATRÁS DO TEXTO - APENAS DESKTOP */ 
+  /* ==========================================
+   FOTO 03 - FOTO INTEIRA CENTRALIZADA
+   SOMENTE DESKTOP
+========================================== */
+
+@media (min-width: 769px) {
 
     #contato.contato {
         position: relative !important;
@@ -992,8 +997,8 @@ img {
 
     #contato .contato-image {
         position: absolute !important;
-        width: 720px !important;
-        height: 520px !important;
+        width: 600px !important;
+        height: 500px !important;
         top: 50% !important;
         left: 50% !important;
         transform: translate(-50%, -50%) !important;
@@ -1003,8 +1008,9 @@ img {
     #contato .contato-image img {
         width: 100% !important;
         height: 100% !important;
-        object-fit: cover !important;
-        object-position: center 10% !important;
+        object-fit: contain !important;
+        object-position: center !important;
+        display: block !important;
     }
 
     #contato .contato-overlay {
@@ -1018,6 +1024,7 @@ img {
         z-index: 2 !important;
         max-width: 700px !important;
         text-align: center !important;
+        transform: translateY(-80px) !important;
     }
 
 }
