@@ -934,7 +934,7 @@ img {
         right: auto !important;
         bottom: auto !important;
         left: auto !important;
-        width: 32% !important;
+        width: 40% !important;
         height: 420px !important;
         margin: 0 !important;
         padding: 0 !important;
@@ -1038,7 +1038,7 @@ img {
         max-width: 760px !important;
 
         margin: 0 auto !important;
-        padding-top: 280px !important;
+        padding-top: 300px !important;
 
         text-align: center !important;
     }
