@@ -908,44 +908,46 @@ img {
    HERO - FOTO LATERAL SOMENTE NO DESKTOP
 ========================================== */
 
+/* CORREÇÃO DA FOTO DO HERO - DESKTOP */
+
 @media (min-width: 769px) {
 
-    #inicio.hero {
-        min-height: 520px;
-        padding: 60px 0;
-    }
-
     #inicio .hero-content {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 50px;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        position: relative !important;
     }
 
     #inicio .hero-text {
-        order: 1; 
-        width: 58%;
-        position: relative;
-        z-index: 2;
+        order: 1 !important;
+        width: 58% !important;
+        position: relative !important;
+        z-index: 2 !important;
     }
 
     #inicio .hero-image {
-        order: 2;
-        width: 32%;
-        height: 420px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        border-radius: 12px;
+        order: 2 !important;
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        width: 32% !important;
+        height: 420px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        flex-shrink: 0 !important;
+        z-index: 1 !important;
     }
 
     #inicio .hero-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        display: block;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center !important;
+        display: block !important;
     }
 }
