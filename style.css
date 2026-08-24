@@ -952,16 +952,18 @@ img {
     }
 }
 
+/* AJUSTE FINO DAS FOTOS 02 E 03 - SOMENTE DESKTOP */
+
 @media (min-width: 769px) {
 
-    /* FOTO 02 - mostra mais a parte de cima */
+    /* Foto 02 - desce levemente o enquadramento */
     .imagem-destaque img[src="imagens/bruna-02.jpg"] {
-        object-position: center top !important;
+        object-position: center 15% !important;
     }
 
-    /* FOTO 03 - mostra mais a parte de cima */
+    /* Foto 03 - desce levemente o enquadramento */
     .contato-image img[src="imagens/bruna-03.jpg"] {
-        object-position: center top !important;
+        object-position: center 15% !important;
     }
 
 }
