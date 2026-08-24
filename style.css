@@ -952,18 +952,72 @@ img {
     }
 }
 
-/* AJUSTE FINO DAS FOTOS 02 E 03 - SOMENTE DESKTOP */
+/* ==========================================
+   AJUSTE DAS FOTOS 02 E 03 - DESKTOP
+   Não altera o celular
+========================================== */
 
 @media (min-width: 769px) {
 
-    /* Foto 02 - desce levemente o enquadramento */
+    /* FOTO 02 - QUADRADA E CENTRALIZADA - APENAS DESKTOP */
+
     .imagem-destaque img[src="imagens/bruna-02.jpg"] {
-        object-position: center 25% !important;
+        width: 500px !important;
+        height: 500px !important;
+        object-fit: cover !important;
+        object-position: center !important;
+        display: block !important;
+        margin: 0 auto !important;
     }
 
-    /* Foto 03 - desce levemente o enquadramento */
-    .contato-image img[src="imagens/bruna-03.jpg"] {
-        object-position: center 35% !important;
+    .imagem-destaque:has(img[src="imagens/bruna-02.jpg"]) {
+        height: 560px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+    }
+
+
+    /* FOTO 03 - MENOR, CENTRALIZADA ATRÁS DO TEXTO - APENAS DESKTOP */ 
+
+    #contato.contato {
+        position: relative !important;
+        min-height: 600px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+    }
+
+    #contato .contato-image {
+        position: absolute !important;
+        width: 720px !important;
+        height: 520px !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        overflow: hidden !important;
+    }
+
+    #contato .contato-image img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center 10% !important;
+    }
+
+    #contato .contato-overlay {
+        position: absolute !important;
+        inset: 0 !important;
+        z-index: 1 !important;
+    }
+
+    #contato .contato-content {
+        position: relative !important;
+        z-index: 2 !important;
+        max-width: 700px !important;
+        text-align: center !important;
     }
 
 }
